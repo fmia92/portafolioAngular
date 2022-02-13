@@ -12,5 +12,7 @@ export class ProductosService {
 
   cargarProductos(): Observable<ProductData> {
     return this.http.get("https://pixe-portfolio-55dca-default-rtdb.europe-west1.firebasedatabase.app/productos_idx.json")
+    
+  
   }
 }

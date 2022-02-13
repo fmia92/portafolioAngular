@@ -10,14 +10,18 @@ import { ProductosService } from 'src/app/services/productos.service';
 export class PortfolioComponent implements OnInit {
 
   productos: ProductData;
+  cargando = true;
 
   constructor(public productosService: ProductosService) { }
 
   ngOnInit(): void {
     this.productosService.cargarProductos().subscribe((res) => {
       this.productos = res
-      console.log(this.productos)
 
+      setTimeout(() => {
+        this.cargando = false;
+  
+      }, 2000);
     })
   }
 
