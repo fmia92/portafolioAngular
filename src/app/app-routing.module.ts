@@ -6,6 +6,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ProductComponent } from './pages/product/product.component';
+import { SearchComponent } from './pages/search/search.component';
 
 const routes: Routes = [
   {path: 'home', component: PortfolioComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'blog', component: BlogComponent},
   {path: 'blog-post', component: BlogPostComponent},
+  {path: 'search/:q', component: SearchComponent},
   {path: '**', redirectTo: 'home'}
 ];
 

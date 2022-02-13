@@ -18,4 +18,6 @@ export class ProductosService {
   getProducto(id: string): Observable<ProductItemData> {
     return this.http.get(`https://pixe-portfolio-55dca-default-rtdb.europe-west1.firebasedatabase.app/productos/${id}.json`)
   }
+
+  
 }

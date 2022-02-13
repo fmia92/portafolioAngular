@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 import {HttpClientModule} from '@angular/common/http';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {HttpClientModule} from '@angular/common/http';
     ProductComponent,
     ContactComponent,
     BlogComponent,
-    BlogPostComponent
+    BlogPostComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
