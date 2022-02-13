@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProductData } from './interfaces/product-data';
+import { ProductosService } from './services/productos.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pixePorfolio';
+
+
+  constructor () {
+
+  }
+  ngOnInit() {
+    
+  }
 }

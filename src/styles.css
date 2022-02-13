@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+.animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+@media (prefers-reduced-motion:reduce),
+print {
+    .animate__animated {
+        -webkit-animation-duration: 0.6 !important;
+        animation-duration: 0.6 !important;
+        -webkit-transition-duration: 0.6 !important;
+        transition-duration: 0.6 !important;
+        -webkit-animation-iteration-count: 1 !important;
+        animation-iteration-count: 1 !important
+    }
+
+    .animate__animated[class*=Out] {
+        opacity: 0
+    }
+}
+
+.animate__rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.animate__fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
