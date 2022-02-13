@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.infoPagina.getEquipo().subscribe((res) => {
-      this.equipo = res
+      this.equipo = res;
     })
   }
 

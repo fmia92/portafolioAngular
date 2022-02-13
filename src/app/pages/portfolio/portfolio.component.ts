@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductData } from 'src/app/interfaces/product-data';
+import { ProductsData } from 'src/app/interfaces/products-data';
 import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ProductosService } from 'src/app/services/productos.service';
 })
 export class PortfolioComponent implements OnInit {
 
-  productos: ProductData;
+  productos: ProductsData;
   cargando = true;
 
   constructor(public productosService: ProductosService) { }
@@ -21,7 +21,7 @@ export class PortfolioComponent implements OnInit {
       setTimeout(() => {
         this.cargando = false;
   
-      }, 2000);
+      },);
     })
   }
 
